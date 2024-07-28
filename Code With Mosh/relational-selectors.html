@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Relational Selectors</title>
+    <style>
+      /* Applies to all p elements under the #products section */
+      /* #products p {
+        background-color: lightblue;
+        padding: 10px;
+        margin: 10px;
+      } */
+
+      /* Applies to all p elements that are direct children of the #products section */
+      /* #products > p {
+        background-color: lightblue;
+        padding: 10px;
+        margin: 10px;
+      } */
+
+      /* Applies to first p element that is direct siblings of the #products section */
+      /* #products + p {
+        background-color: lightblue;
+        padding: 10px;
+        margin: 10px;
+      } */
+
+      /* Applies to all p elements that are siblings of the #products section */
+      #products ~ p {
+        background-color: lightblue;
+        padding: 10px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="products">
+      <p>First product</p>
+      <article>
+        <h1>Product 1</h1>
+        <p>Product description</p>
+      </article>
+      <p>Second product</p>
+    </section>
+    <p>Not a product</p>
+    <p>Not a product</p>
+  </body>
+</html>
